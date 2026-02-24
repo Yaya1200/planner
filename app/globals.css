@@ -7,4 +7,11 @@ body {background-image: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im
   background-repeat: no-repeat;
   width: 30px;
   height: 25px;
+  border-radius: 50%;
+}
+.logo-container{
+  display: flex;
+    margin-top: 30px;
+  margin-left: 30px;
+  gap:20px
 }
