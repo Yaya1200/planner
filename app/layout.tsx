@@ -2,6 +2,8 @@ import "./globals.css"
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 
+
+export const daynamic = "force-dynamic"
 export default function RootLayout({
   children,
 }: Readonly<{
