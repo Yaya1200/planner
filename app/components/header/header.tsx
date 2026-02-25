@@ -5,11 +5,14 @@ function Header() {
     <div>
       <div className='logo-container'>
         <div className='planner-logo'></div>
-      <div>Planner</div>
-      </div>
-      
+      <div className='planner-style'>Planner</div>
+
+
       <input placeholder="what to search"/>
       <button>search</button></div>
+      </div>
+      
+      
   )
 }
 
