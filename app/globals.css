@@ -1,5 +1,7 @@
 @import "tailwindcss";
-body {background-image: url("https://plus.unsplash.com/premium_photo-1745609474187-da9874971836?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+body {background-image: url("https://plus.unsplash.com/premium_photo-1745609474187-da9874971836?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  min-height: 100vh;
+
 }
 .planner-logo{
   background-image: url("https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -15,4 +17,8 @@ body {background-image: url("https://plus.unsplash.com/premium_photo-17456094741
     margin-top: 30px;
   margin-left: 30px;
   gap:20px
+}
+.planner-style{
+  font-size: 50px;
+  font-weight: bolder;
 }
