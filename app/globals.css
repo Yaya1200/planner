@@ -57,3 +57,46 @@ margin-top: 24px;
   justify-content: space-between;
   
 }
+.add-container{
+  display: flex;
+  gap: 30px;
+  margin-top: 160px;
+  margin-left: 30px;
+  margin-right:30px;
+
+}
+
+.backlog, .in-progress, .done{
+  background-color: white;
+  width: 1000px;
+  height: 100px;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 20px;
+}
+.continer-name{
+ font-weight: bold;
+}
+ .add-container button{
+  background-color: #c7cec8; 
+  border: none;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  padding: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+ font-size: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.add-container button, .add-name{
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.footer{
+  text-align: center;
+  top: 10px;
+  margin-top: 240px;
+  font-size: 14px;
+}
