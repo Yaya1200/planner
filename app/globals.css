@@ -81,12 +81,12 @@ margin-top: 24px;
   background-color: #c7cec8; 
   border: none;
   color: rgb(0, 0, 0);
-  font-weight: bolder;
+  font-weight: bold;
   padding: 2px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
- font-size: 16px;
+  font-size: 16px;
   border-radius: 50%;
   cursor: pointer;
 }
