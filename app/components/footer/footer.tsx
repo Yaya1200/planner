@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className="footer">&copy; 2026 planner app  made with ❤</div>
   )
 }
 
