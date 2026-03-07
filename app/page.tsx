@@ -12,7 +12,7 @@ export default function Home() {
         <button>In Progress</button>
         <button>Done</button>
       </div>
-      <div className="in-progress">
+      <div className="in-progress" style={{ display: "not-none" }}>
         <span className="continer-name"> In Progress</span>  <br/>
         <button>+</button> <span className="add-name"> add a card</span>
       </div>
