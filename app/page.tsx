@@ -8,9 +8,9 @@ export default function Home() {
         <button>+</button> <span className="add-name"> add a card</span>
       </div>
       <div className="container-middle" >
-        <button>Backlog</button><br/>
-        <button>In Progress</button><br/>
-        <button>Done</button>
+        <button className="backlog1">Backlog</button><br/>
+        <button className="in-progress1">In Progress</button><br/>
+        <button className="done1">Done</button>
         <textarea placeholder="Enter your text here"></textarea>
         <button className="save-button">Save</button>
       </div>
