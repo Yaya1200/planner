@@ -107,6 +107,15 @@ margin-top: 5px;
   background-color: white;
   border-radius: 5px;
 }
+.container-middle .backlog1:hover{
+  background-color: rgb(231, 56, 56);
+  color: white;}
+  .container-middle .in-progress1:hover{
+  background-color:rgb(220, 217, 17);
+  color: white;}
+  .container-middle .done1:hover{
+  background-color: rgb(56, 231, 76);
+  color: white;}
 .container-middle button{
   background-color: #c7cec8; 
   border: none;
