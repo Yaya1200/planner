@@ -14,7 +14,9 @@ function Header() {
       </div>
        <div className='search-button'>
         <input  placeholder="what to search"/>
-      <button>search</button>
+      <button>
+        search
+      </button>
       </div>
       </div>
       </div>
