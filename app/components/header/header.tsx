@@ -11,7 +11,6 @@ function Header() {
           Notes
         </Link>
       </div>
-<<<<<<< HEAD
 
       <div className="header-container">
         <div className="logo-container">
@@ -24,26 +23,6 @@ function Header() {
       </div>
     </header>
   );
-=======
-    <div className='header-container'>
-      <div className='logo-container'>
-        <div className='planner-logo'></div>
-      <div className='planner-style'>
-        Planner
-      </div>
-      </div>
-       <div className='search-button'>
-        <input  placeholder="what to search"/>
-      <button>
-        search
-      </button>
-      </div>
-      </div>
-      </div>
-      
-      
-  )
->>>>>>> c4452ab05f5cfc6162c6703c0269fbcb2507176c
 }
 
-export default Header
+export default Header;
