@@ -37,8 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ---
 
-Supabase integration
---------------------
+## Supabase integration
 
 I added a Supabase-backed API for `notes` and a server client. To enable it locally:
 
@@ -60,6 +59,6 @@ npm run dev -- --hostname 127.0.0.1 --port 3000
 ```
 
 Notes:
+
 - The frontend `viewNotes` page now uses the `/api/notes` endpoints which persist to Supabase when configured. If Supabase is not configured the page will fall back to the bundled sample notes.
 - Keep your service role key secret — do not commit it to source control.
-
