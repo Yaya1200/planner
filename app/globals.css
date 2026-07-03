@@ -1,22 +1,9 @@
 @import "tailwindcss";
+body {background-image: url("https://plus.unsplash.com/premium_photo-1745609474187-da9874971836?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-color: aliceblue;
 
-:root {
-  color-scheme: light;
-  font-family: Inter, "Segoe UI", sans-serif;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #f5f7ff 0%, #eef4ff 45%, #f8f9ff 100%);
-  color: #0f172a;
-}
-
-body::before {
+body::before{
   content: "";
   position: fixed;
   inset: 0;
@@ -111,25 +98,13 @@ select {
 
 .hero-card {
   display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 28px;
-  margin-bottom: 24px;
+  margin-top: 10px;
+  margin-left: 30px;
+  gap:20px
 }
-
-.eyebrow {
-  margin: 0 0 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.22em;
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: #2563eb;
-}
-
-.hero-card h1 {
-  margin: 0;
-  font-size: clamp(1.7rem, 3vw, 2.6rem);
-  max-width: 680px;
+.planner-style{
+  font-size: 50px;
+  font-weight: bolder;
 }
 
 .hero-copy {
@@ -332,101 +307,12 @@ textarea {
   align-items: center;
 }
 
-.priority-pill {
-  display: inline-flex;
-  align-items: center;
-  padding: 4px 8px;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 700;
-}
+textarea{
+  margin-top: 20px;
+  width: 90%;
+  height: 80px;
+  padding-left: 10px;
+  border-radius: 3px;
+  margin-left: 17px;
 
-.priority-high {
-  background: #fee2e2;
-  color: #b91c1c;
-}
-
-.priority-medium {
-  background: #fef3c7;
-  color: #b45309;
-}
-
-.priority-low {
-  background: #dcfce7;
-  color: #166534;
-}
-
-.due-date {
-  color: #64748b;
-  font-size: 0.8rem;
-}
-
-.empty-state {
-  margin: 0;
-  padding: 14px;
-  border-radius: 14px;
-  color: #64748b;
-  background: #f8fafc;
-  border: 1px dashed #cbd5e1;
-  text-align: center;
-}
-
-.notes-page {
-  padding: 32px 30px 80px;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-.note-grid {
-  display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 24px;
-  margin-top: 24px;
-}
-
-.note-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.note-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.note-card {
-  background: white;
-  border-radius: 16px;
-  padding: 16px;
-  border: 1px solid #e2e8f0;
-}
-
-.note-card h3 {
-  margin: 0 0 8px;
-}
-
-.note-card p {
-  margin: 0;
-  color: #64748b;
-  line-height: 1.5;
-}
-
-.footer {
-  padding: 0 30px 28px;
-  text-align: center;
-  color: #64748b;
-}
-
-@media (max-width: 960px) {
-  .workspace-grid,
-  .planner-board,
-  .note-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-card {
-    flex-direction: column;
-  }
 }
