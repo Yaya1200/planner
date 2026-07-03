@@ -8,9 +8,9 @@ type RouteParams = {
 // GET a single note
 export async function GET(
   _: NextRequest,
-  { params }: { params: RouteParams }
+  { params }: { params: Promise<RouteParams> }
 ) {
-  const { id } = params;
+  const { id } = await params;
 
   const { data, error } = await supabaseAdmin
     .from("notes")
@@ -31,10 +31,10 @@ export async function GET(
 // UPDATE a note
 export async function PATCH(
   request: NextRequest,
-  { params }: { params: RouteParams }
+  { params }: { params: Promise<RouteParams> }
 ) {
   try {
-    const { id } = params;
+    const { id } = await params;
     const payload = await request.json();
 
     const updates: Record<string, any> = {};
@@ -80,9 +80,9 @@ export async function PATCH(
 // DELETE a note
 export async function DELETE(
   _: NextRequest,
-  { params }: { params: RouteParams }
+  { params }: { params: Promise<RouteParams> }
 ) {
-  const { id } = params;
+  const { id } = await params;
 
   const { error } = await supabaseAdmin
     .from("notes")
