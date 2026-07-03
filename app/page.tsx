@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { DragEvent, FormEvent, useEffect, useMemo, useState } from "react";
 
 type TaskStatus = "backlog" | "inProgress" | "done";
@@ -168,6 +169,11 @@ export default function Home() {
           <p className="hero-copy">
             Capture projects, move them across stages, and keep your team aligned from first idea to done.
           </p>
+          <div className="hero-actions" style={{ marginTop: "14px" }}>
+            <Link href="/viewNotes" className="header-link">
+              Open notes
+            </Link>
+          </div>
         </div>
         <div className="hero-stats" aria-label="planner summary">
           <div>
