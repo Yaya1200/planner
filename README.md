@@ -34,3 +34,32 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+Supabase integration
+--------------------
+
+I added a Supabase-backed API for `notes` and a server client. To enable it locally:
+
+1. Create a Supabase project and get the `SUPABASE_URL` and a service role key (`SUPABASE_SERVICE_ROLE_KEY`).
+2. Add them to a `.env.local` in the project root:
+
+```env
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGci... (service key)
+```
+
+3. Apply the DB migration in `db/migrations/create_tables.sql` using the Supabase CLI or psql.
+
+4. Install deps and run the dev server:
+
+```bash
+npm install
+npm run dev -- --hostname 127.0.0.1 --port 3000
+```
+
+Notes:
+- The frontend `viewNotes` page now uses the `/api/notes` endpoints which persist to Supabase when configured. If Supabase is not configured the page will fall back to the bundled sample notes.
+- Keep your service role key secret — do not commit it to source control.
+
