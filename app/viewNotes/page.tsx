@@ -95,6 +95,10 @@ export default function ViewNotesPage() {
             <strong>{noteCount}</strong>
             <span>Total notes</span>
           </div>
+          <div>
+            <strong>{loading ? "…" : "Ready"}</strong>
+            <span>Sync status</span>
+          </div>
         </div>
       </section>
 
@@ -128,7 +132,9 @@ export default function ViewNotesPage() {
             />
           </label>
 
-          <button type="submit">Save note</button>
+          <button type="submit" disabled={loading}>
+            {loading ? "Saving…" : "Save note"}
+          </button>
         </form>
 
         <div className="panel">
@@ -140,13 +146,17 @@ export default function ViewNotesPage() {
           </div>
 
           <div className="note-list">
-            {notes.map((note) => (
-              <article key={note.id} className="note-card">
-                <h3>{note.title}</h3>
-                <p>{note.content}</p>
-                <p className="due-date">Created {note.createdAt}</p>
-              </article>
-            ))}
+            {notes.length === 0 ? (
+              <div className="empty-state">No notes yet. Add the first one to get started.</div>
+            ) : (
+              notes.map((note) => (
+                <article key={note.id} className="note-card">
+                  <h3>{note.title}</h3>
+                  <p>{note.content}</p>
+                  <p className="due-date">Created {note.createdAt}</p>
+                </article>
+              ))
+            )}
           </div>
         </div>
       </section>
