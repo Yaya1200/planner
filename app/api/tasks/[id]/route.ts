@@ -8,9 +8,9 @@ type Params = {
 // GET single task
 export async function GET(
   _: NextRequest,
-  { params }: { params: Params }
+  { params }: { params: Promise<Params> }
 ) {
-  const { id } = params;
+  const { id } = await params;
 
   const { data, error } = await supabaseAdmin
     .from("tasks")
@@ -33,10 +33,10 @@ export async function GET(
 // UPDATE task
 export async function PATCH(
   request: NextRequest,
-  { params }: { params: Params }
+  { params }: { params: Promise<Params> }
 ) {
   try {
-    const { id } = params;
+    const { id } = await params;
     const payload = await request.json();
 
     const updates: Record<string, any> = {};
@@ -96,9 +96,9 @@ export async function PATCH(
 // DELETE task
 export async function DELETE(
   _: NextRequest,
-  { params }: { params: Params }
+  { params }: { params: Promise<Params> }
 ) {
-  const { id } = params;
+  const { id } = await params;
 
   const { error } = await supabaseAdmin
     .from("tasks")
