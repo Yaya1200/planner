@@ -5,7 +5,7 @@ function Header() {
     <header className="site-header">
       <div className="header-top">
         <Link href="/" className="header-link">
-          Home
+          Board
         </Link>
         <Link href="/viewNotes" className="header-link">
           Notes
@@ -17,9 +17,10 @@ function Header() {
           <div className="planner-logo" />
           <div>
             <div className="planner-style">Planner</div>
-            <p className="header-subtitle">Keep your work moving</p>
+            <p className="header-subtitle">Keep your work moving with calm focus.</p>
           </div>
         </div>
+        <div className="header-badge">Daily focus mode</div>
       </div>
     </header>
   );
